@@ -13,13 +13,15 @@ import random
 print("Welcome to Dice Roller\n\n")
 
 user_name = input("Enter your name: ")
-running = True
 
-while running:
-    start = input("Type \"Enter\" to roll or \"Quit\" to stop playing.\n")
+while True:
+    start = input("Type \"Roll\" to roll or \"Quit\" to stop playing.\n")
     if start.lower() == "quit":
-        running = False
+        break
 
     roll = random.randint(1, 9)
-    print(f"Roll Result: {roll}")
+
+    print(f"\nRoll Result: {roll}")
     print("\n===========================\n")
+
+print(f"\nThanks for playing Dice Roll {user_name}")
