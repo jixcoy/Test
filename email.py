@@ -10,5 +10,6 @@ Email sending tutorial
 https://realpython.com/python-send-email/
 
 Libraries:
-smtplib - python builtin
+smtplib - defines smtp client session
+ssl - Secure Sockets Layer
 """
