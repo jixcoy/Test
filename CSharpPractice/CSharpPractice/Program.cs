@@ -114,23 +114,69 @@ namespace CSharpPractice
              *      Fields - lowercase
              *      Properties - uppercase (names match corresponding field)
              *
-             *  Fields - class member that holds different pieces of data. 
+             *  |Fields| - class member that holds different pieces of data. 
              *  ex:
-             *  Class Forest {
-             *  Public string name;
-             *  Public int trees;
+             *  class Forest {
+             *  public string name;
+             *  public int trees;
              *  }
              *
-             *  Properties - class member that gives rules for setting values to fields with get() and set()
+             *  |Properties|
+             *  class member that gives rules for setting values to fields with get() and set()
              *  Get is called when the property is accessed
              *  Set is called when the property is assigned a value
              *  Ex.
-             *  Public int area;
-             *  Public int Area
+             *  public int area;
+             *  public int Area
              *  {
              *      Get { return area; }
              *      Set { area = value; }
              *  }
+             *  
+             *  |Automatic Properties |
+             *  make making a property fast and easy by not requiring a field to be set in the first place.
+             *  The field is still made in the background, but all that matters is the property
+             *  Automatic ex.
+             *  public int Area
+             *  { get; set; }
+             *  
+             *  |Public v Private|
+             *  Public and private are access modifiers and dictate whether a a member can be accessed by and any class or only by code within
+             *  the same class. Generally, fields are private and properties are public
+             *  
+             *  |Get-Only Properties|
+             *  If you want to be able to get a property but not be able to set it, there are two methods. 
+             *  1) include no set() - gives this warning whenever and wherever code tries to set it:
+             *  "error CS0200: Property or indexer 'Forest.Area' cannot be assigned to (it is read-only)"
+             *  2) make the set() private - gives this warning whenever code tries to set it outside of the class:
+             *  "error CS0272: The property or indexer 'Forest.Area' cannot be used in this context because the set accessor is inaccessible"
+             *  
+             *  Option 2 is used more to allow code in the class to set the property
+             *  
+             *  |Methods|
+             *  Same syntax as a normal method. Can be used as a normal method or to change data in a class
+             *  
+             *  |Constructors|
+             *  Used to give values to fields and properties automatically when the class is instantiated with the "new" keyword.
+             *  If a constructor is not defined in a class, a hidden one will be automatically created and holds no parameters
+             *  Ex.
+             *  class Forest
+             *  {
+             *      public int Area;
+             *      public Forest(int area)
+             *      {
+             *          Area = area
+             *      }
+             *  }
+             *  
+             *  Forest f = new Forest(0);
+             *  
+             *  To be more specific with constructors, use the "this" keyword when assigning values to properties that are similar in name.
+             *  Adding "this" tells the reader the value is being added to "this" instance of the class.
+             *  ex.
+             *  this.Area = area;
+             *  
+             *  "this" can also be used as a function when overloading constructors. Remember to not confuse the meaning
              *  
              * */
         }
