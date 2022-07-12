@@ -1,0 +1,8 @@
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\bin\Debug\CSharpPractice.exe.config
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\bin\Debug\CSharpPractice.exe
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\bin\Debug\CSharpPractice.pdb
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\obj\Debug\CSharpPractice.csproj.AssemblyReference.cache
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\obj\Debug\CSharpPractice.csproj.SuggestedBindingRedirects.cache
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\obj\Debug\CSharpPractice.csproj.CoreCompileInputs.cache
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\obj\Debug\CSharpPractice.exe
+C:\Users\jixco\OneDrive\Documents\Test\CSharpPractice\CSharpPractice\obj\Debug\CSharpPractice.pdb

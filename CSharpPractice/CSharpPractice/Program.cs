@@ -179,6 +179,10 @@ namespace CSharpPractice
              *  "this" can also be used as a function when overloading constructors. Remember to not confuse the meaning
              *  
              * */
+            CarTestClass car1 = new CarTestClass(4, 5, 4, "red");
+            Console.WriteLine(car1.Doors);
+            Console.WriteLine(car1.Passengers);
+            Console.ReadLine();
         }
     }
 }

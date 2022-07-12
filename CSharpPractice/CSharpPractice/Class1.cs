@@ -30,15 +30,7 @@ namespace CSharpPractice
                 else { doors = value; }
             }
         }
-        public int Passengers
-        {
-            get { return passengers; }
-            set
-            {
-                if (value != doors) { passengers = doors; }
-                else { passengers = value; }
-            }
-        }
+        public int Passengers { get; set; }
         public int Wheels
         {
             get { return wheels; }
